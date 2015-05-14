@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Daylight</string>
+
+    <string name="label_settings">Settings</string>
+    <string name="label_refresh">Refresh</string>
+    <string name="label_reset">Reset</string>
+    <string name="label_state">State</string>
+    <string name="label_refreshtime">Refresh time</string>
+    <string name="label_loading">Connecting . . .</string>
+    <string name="label_connection">Connection</string>
+
+    <string name="label_alarm_enabled">Alarm enabled</string>
+    <string name="label_alarm_disabled">Alarm disabled</string>
+
+    <string name="label_lightison">Light is on</string>
+    <string name="label_lightisoff">Light is off</string>
+
+    <string name="label_weekday">Weekday: </string>
+    <string name="label_weekend">Weekend: </string>
+
+    <string name="label_connectOnStartup">Autoconnect</string>
+    <string name="label_alarmidentifier">Alarm 1 clock name</string>
+    <string name="label_alarmidentifier2">Alarm 2 clock name</string>
+    <string name="label_enableslave">Enable master/slave</string>
+    <string name="label_ip_master">Host or IP-Address (Master)</string>
+    <string name="label_port_master">TCP Port (Master)</string>
+    <string name="label_ip_slave">Host or IP-Address (Slave)</string>
+    <string name="label_port_slave">TCP Port (Slave)</string>
+    <string name="label_timeout">Timeout (seconds)</string>
+    <string name="label_updateinterval">Update interval (seconds)</string>
+    <string name="label_debug">Debug</string>
+
+    <string name="label_summary_connectOnStartup">Connect on startup</string>
+    <string name="label_summary_alarmidentifier">Alarm clock name</string>
+    <string name="label_summary_ip_master">i.e. 192.168.5.30</string>
+    <string name="label_summary_port_master">Default TCP-Port: 8080</string>
+    <string name="label_summary_enableslave">Enables a second alarm clock</string>
+    <string name="label_summary_timeout">Default Socket-Timeout: 5s</string>
+    <string name="label_summary_ip_slave">i.e. 192.168.5.40</string>
+    <string name="label_summary_port_slave">Default TCP-Port: 8080</string>
+    <string name="label_summary_updateinterval">Default Polling interval: 10s (0: Deactivate)</string>
+    <string name="label_summary_debug">Enable Debug-Textfields</string>
+
+    <string name="config_default_alarmidentifier">Alarm 1</string>
+    <string name="config_default_alarmidentifier2">Alarm 2</string>
+    <string name="config_default_ip_master">192.168.5.30</string>
+    <string name="config_default_ip_slave">192.168.5.40</string>
+    <integer name="config_default_port">8080</integer>
+    <integer name="config_default_timeout">5</integer>
+    <integer name="config_default_interval">10</integer>
+
+</resources>

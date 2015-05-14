@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="false"  android:background="@color/background_floating_material_dark">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/background_floating_material_dark"
+            android:orientation="horizontal">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="350sp"
+                android:layout_height="fill_parent"
+                android:background="@color/background_floating_material_dark"
+                android:orientation="vertical" android:id="@+id/layout_alarm1">
+
+                <TextView
+                    android:id="@+id/text_alarmidentifier"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="click_refresh"
+                    android:text="@string/label_alarmidentifier"
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/text_currenttime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="click_settime"
+                    android:textColor="@android:color/white"
+                    android:textSize="60dp" />
+
+                <TextView
+                    android:id="@+id/text_currentdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="click_setdate"
+                    android:text="@string/label_loading"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp" />
+
+                <ToggleButton
+                    android:id="@+id/bt_snooze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="click_light"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/label_lightisoff"
+                    android:textOn="@string/label_lightison"
+                    android:textSize="20dp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/text_waketime_weekday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="click_waketime_weekday"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:id="@+id/text_waketime_weekend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="click_waketime_weekend"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:id="@+id/text_wakestate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/label_alarm_enabled"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@+id/layout_debug"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_connection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_connection"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/text_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_state"
+                        android:textColor="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/bt_refresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:onClick="click_refresh"
+                            android:text="@string/label_refresh" />
+
+                        <Button
+                            android:id="@+id/bt_refreshtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:onClick="click_refreshtime"
+                            android:text="@string/label_refreshtime" />
+
+                        <Button
+                            android:id="@+id/bt_reset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:onClick="click_reset"
+                            android:text="@string/label_reset" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="350sp"
+                android:layout_height="fill_parent"
+                android:background="@color/background_floating_material_dark"
+                android:orientation="vertical" android:id="@+id/layout_alarm2">
+
+                <TextView
+                    android:id="@+id/text_alarmidentifier2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="click_refresh"
+                    android:text="@string/label_alarmidentifier2"
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/text_currenttime2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="click_settime"
+                    android:textColor="@android:color/white"
+                    android:textSize="60dp" />
+
+                <TextView
+                    android:id="@+id/text_currentdate2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="click_setdate"
+                    android:text="@string/label_loading"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp" />
+
+                <ToggleButton
+                    android:id="@+id/bt_snooze2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="click_light"
+                    android:textColor="@android:color/white"
+                    android:textOff="@string/label_lightisoff"
+                    android:textOn="@string/label_lightison"
+                    android:textSize="20dp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/text_waketime_weekday2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="click_waketime_weekday"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:id="@+id/text_waketime_weekend2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="click_waketime_weekend"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:id="@+id/text_wakestate2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/label_alarm_enabled"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@+id/layout_debug2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_connection2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_connection"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/text_state2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_state"
+                        android:textColor="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/bt_refresh2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:onClick="click_refresh"
+                            android:text="@string/label_refresh" />
+
+                        <Button
+                            android:id="@+id/bt_refreshtime2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:onClick="click_refreshtime"
+                            android:text="@string/label_refreshtime" />
+
+                        <Button
+                            android:id="@+id/bt_reset2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:onClick="click_reset"
+                            android:text="@string/label_reset" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
